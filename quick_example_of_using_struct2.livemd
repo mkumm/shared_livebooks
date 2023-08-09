@@ -1,0 +1,19 @@
+# Quick example of using struct/2
+
+## Section
+
+```elixir
+defmodule User do
+  defstruct name: ""
+end
+```
+
+```elixir
+params = %{name: "Mike", age: 100}
+struct(User, params)
+```
+
+```elixir
+params = %{name: "Mike", age: 100}
+struct!(User, params)
+```
